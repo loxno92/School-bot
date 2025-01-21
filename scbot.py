@@ -16,9 +16,9 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
 
-ADMIN_ID = 2114765668  # Замените на ID администратора
+ADMIN_ID = 123  # Замените на ID администратора
 print(f"Admin ID: {ADMIN_ID}") # Вывод ID админа
-TOKEN = "7760320753:AAGaX7bpFAVgnAEFSLTVLwhb7fN72IGREUs"  # Замените на токен вашего бота
+TOKEN = ""  # Замените на токен вашего бота
 
 DATABASE_FILE = "data.json"
 
@@ -56,7 +56,7 @@ def save_data(data):
 
 def initialize_admin():
     data = load_data()
-    admin_id = 2114765668
+    admin_id = 123  # Замените на ID администратора
     if admin_id not in data["users"]:
         data["users"].append(admin_id)
         save_data(data)
